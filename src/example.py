@@ -1,4 +1,3 @@
-#(c) Mircea Andrecut,  mircea.andrecut@gmail.com (2022)
 import lorem
 from vlCryptography import vlCryptography
 
