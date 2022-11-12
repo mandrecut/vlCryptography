@@ -3,8 +3,8 @@ class vlCryptography(object):
     def __init__(self):
         self._alphabet = """ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
     def crypt(self,pswd,txt):
-        if len(pswd) < 8:
-            raise ValueError("Password must be minimum 8 characters length.")
+        if len(pswd) < 9:
+            raise ValueError("Password must be minimum 9 characters length.")
         K,M,N = len(self._alphabet),len(pswd),len(txt)
         pswd = [self._alphabet.index(q) for q in pswd]
         for J in range(N):
