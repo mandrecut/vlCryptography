@@ -14,7 +14,7 @@ pswd = lorem.sentence()
 print("Pswd:")
 print(pswd,"\n")
 
-plain_text = lorem.paragraph() + " " + lorem.paragraph()
+plain_text = lorem.paragraph()
 print("Plain text:")
 print(plain_text,"\n")
 
@@ -33,14 +33,14 @@ output
 
 ```
 Pswd:
-Quiquia adipisci ut porro quisquam quisquam. 
+Dolorem est est dolore sed. 
 
 Plain text:
-Labore adipisci modi porro adipisci quiquia. Labore aliquam quaerat dolore neque. Tempora consectetur consectetur dolore. Modi quisquam numquam eius ipsum modi sed. Est est sit porro dolor sit. Numquam tempora amet labore non neque consectetur numquam. Consectetur ut aliquam non aliquam quisquam ut. Adipisci magnam numquam sed non aliquam. Etincidunt dolore magnam voluptatem non porro. Magnam quaerat magnam tempora voluptatem adipisci. Velit dolor eius porro aliquam adipisci. 
+Adipisci est voluptatem sit etincidunt. Sit etincidunt quiquia est. Sit est adipisci eius sed est etincidunt. Quaerat consectetur eius modi modi eius. Dolorem consectetur numquam sed dolore. Amet modi numquam dolore sit modi. Quisquam non eius voluptatem labore. Aliquam dolore dolorem etincidunt etincidunt. 
 
 Cypher text
-<UHbCTd!SnWAOv%0G=X2X&;l:^P2R/"X$wIOEOg5$KlzNxD?4}% -S>{|*:J_x%64t3v}Wbh!Cor",$sxqC1lq[P{MjZ#)7:c9Cg8,%g9@.='Muk1xt5[Q",me%,zh4t?7{<B".b&Cotk0%1GgCXpe61wWURX>FaR}?E\3;$C^.k0NA<El}sD."[wxv-pQh~EwzYo,p.Q{Uf`WF=6h3&xoY7!Yc\6EUnkqMiL05Nr/8+l!|4ZoIUF`)LC|[Q1&zWrK9*6qR!5s<yTk<Mg4$3?EgUX[L&0.t[(sxdRU:Z}Z/WX)rJCuWAy2MB>shdk&DUVM^%Y#S&tJ,cmy>`V~jB^S}1tL-mb5V=~JC3/tWGtA|"*gtVt-<.-%H6{a8Xib{{VZ9h%%<ru}^qSSyc,;+N<#O#9nUJc4g~k`DiI#aTTbC}TA`0O5=C&,qgEVz~_BG~JW8GqFjmMVQuWSF^H[VAK3NL@;Qp_i[G 
+dZ:j&O2_'AKK2:5I%MO*Ay~>n n/_-PH4lv05]`)Qugv`Vs%qA;R__CJ.B =k/sdbHF|^& V0V.28Z6rVu`kM[l&KK.|bP9"Y]^1gX/l0p ~JQq*+.ipzN[/pIu}v,AN[r'to&h.Z-#p_.}L5gJs0)-m/d>yXm1cYk&4++GPELIO5[coa<tZ.c|=Hu>dM9/:oNp*"_!IFmA8}P$K$B"7X<S:5yu')p5[YDUo.4znE@NpA_jO\fA%@`p~`vsox@\RjenNe06vb.KEx):,XM.Nz`[Y6`aaZUs4SvpBf|{3P0(JL@U:3&y_ 
 
 Plain text:
-Labore adipisci modi porro adipisci quiquia. Labore aliquam quaerat dolore neque. Tempora consectetur consectetur dolore. Modi quisquam numquam eius ipsum modi sed. Est est sit porro dolor sit. Numquam tempora amet labore non neque consectetur numquam. Consectetur ut aliquam non aliquam quisquam ut. Adipisci magnam numquam sed non aliquam. Etincidunt dolore magnam voluptatem non porro. Magnam quaerat magnam tempora voluptatem adipisci. Velit dolor eius porro aliquam adipisci.
+Adipisci est voluptatem sit etincidunt. Sit etincidunt quiquia est. Sit est adipisci eius sed est etincidunt. Quaerat consectetur eius modi modi eius. Dolorem consectetur numquam sed dolore. Amet modi numquam dolore sit modi. Quisquam non eius voluptatem labore. Aliquam dolore dolorem etincidunt etincidunt.
 ```
