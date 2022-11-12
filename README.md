@@ -2,7 +2,7 @@
 
 This is a "very light" encryption/decryption method, without any dependencies, just plain vanilla Python. 
 
-Warning, "do it yourself encryption" is not encouraged, better use an existing validated approach. The method described here was developed only for educational purposes, it is not fully tested and validated, in practice use at your own risk. 
+Warning, "do it yourself encryption" is not encouraged, better use an existing validated approach. The method described here was developed only for educational purposes, it is not fully tested and validated, in practice use it at your own risk. 
 
 ## Basic usage
 
