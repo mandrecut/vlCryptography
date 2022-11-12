@@ -29,7 +29,7 @@ plain_text = vlC.crypt(pswd,cypher_text)
 print(plain_text)
 ```
 
-output 
+Output example:
 
 ```
 Pswd:
