@@ -21,7 +21,7 @@ print(plain_text,"\n")
 vlC = vlCryptography()
 
 cypher_text = vlC.crypt(pswd,plain_text)
-print("Cypher text")
+print("Cypher text:")
 print(cypher_text,"\n")
 
 print("Plain text:")
