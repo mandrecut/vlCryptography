@@ -8,39 +8,40 @@ Warning, "do it yourself encryption" is not encouraged, better use an existing v
 
 ```python
 import lorem
+import base64
 from vlCryptography import vlCryptography
 
-pswd = lorem.sentence()
-print("Pswd:")
-print(pswd,"\n")
+key = lorem.sentence()
+print("Key:")
+print(key,"\n")
+
+vlC = vlCryptography(key)
 
 plain_text = lorem.paragraph()
 print("Plain text:")
 print(plain_text,"\n")
 
-vlC = vlCryptography()
-
-cypher_text = vlC.crypt(pswd,plain_text)
-print("Cypher text:")
-print(cypher_text,"\n")
+cipher_text = vlC.crypt(plain_text.encode())
+print("Cipher text:")
+print(base64.urlsafe_b64encode(cipher_text).decode(),"\n")
 
 print("Plain text:")
-plain_text = vlC.crypt(pswd,cypher_text)
-print(plain_text)
+plain_text = vlC.crypt(cipher_text)
+print(plain_text.decode())
 ```
 
 Output example:
 
 ```
-Pswd:
-Dolorem est est dolore sed. 
+Key:
+Eius ut adipisci amet. 
 
 Plain text:
-Adipisci est voluptatem sit etincidunt. Sit etincidunt quiquia est. Sit est adipisci eius sed est etincidunt. Quaerat consectetur eius modi modi eius. Dolorem consectetur numquam sed dolore. Amet modi numquam dolore sit modi. Quisquam non eius voluptatem labore. Aliquam dolore dolorem etincidunt etincidunt. 
+Eius ipsum ut voluptatem ut magnam eius. Amet consectetur quiquia dolorem. Non modi neque adipisci velit voluptatem labore adipisci. Tempora eius porro tempora quisquam. Consectetur dolor consectetur est. Quiquia quaerat porro sit. Sed velit quisquam sit sed magnam. Sed non quisquam consectetur porro aliquam aliquam sit. 
 
-Cypher text:
-dZ:j&O2_'AKK2:5I%MO*Ay~>n n/_-PH4lv05]`)Qugv`Vs%qA;R__CJ.B =k/sdbHF|^& V0V.28Z6rVu`kM[l&KK.|bP9"Y]^1gX/l0p ~JQq*+.ipzN[/pIu}v,AN[r'to&h.Z-#p_.}L5gJs0)-m/d>yXm1cYk&4++GPELIO5[coa<tZ.c|=Hu>dM9/:oNp*"_!IFmA8}P$K$B"7X<S:5yu')p5[YDUo.4znE@NpA_jO\fA%@`p~`vsox@\RjenNe06vb.KEx):,XM.Nz`[Y6`aaZUs4SvpBf|{3P0(JL@U:3&y_ 
+Cipher text:
+KREZK-yRPIuZNQzt-Bj618DtHCwtDKkVTK3YOGHZa1ZNdcy9pY0_1swZQf34GO_XwusJOzgduA0e-N1tZcl5UU04iLeglz6dgXYM1uNWrNXD_AV4Ih29DQn4zXxlyGVLT3HMrqmUJYzMLkP0-Uj42dj9AXggGa4XHr2MeWjRfFFfe4X27KwplZw3XvmsXeXN37gcNz4Ko1gYvcFoY8ptGF1thau9jS2Vwnhv9-JL6dvY_RgtPlioFwC33jhv12JLSXuYvbiNPtiJK1i2rGn50d3tBTlsCbkZCarNbCzIY0ped8yrpYxi2L89SLj6XeDR2LgdLSULvQ0NtYxrZcwsS0l8zLWtnyKZgXYMy-lcrNbD9kwpORG_CRm5wThv12JLSXuYvThNXiiUM1i40gFU30nsCdkMTDDkiNqWSE15hvxALg== 
 
 Plain text:
-Adipisci est voluptatem sit etincidunt. Sit etincidunt quiquia est. Sit est adipisci eius sed est etincidunt. Quaerat consectetur eius modi modi eius. Dolorem consectetur numquam sed dolore. Amet modi numquam dolore sit modi. Quisquam non eius voluptatem labore. Aliquam dolore dolorem etincidunt etincidunt.
+Eius ipsum ut voluptatem ut magnam eius. Amet consectetur quiquia dolorem. Non modi neque adipisci velit voluptatem labore adipisci. Tempora eius porro tempora quisquam. Consectetur dolor consectetur est. Quiquia quaerat porro sit. Sed velit quisquam sit sed magnam. Sed non quisquam consectetur porro aliquam aliquam sit.
 ```
