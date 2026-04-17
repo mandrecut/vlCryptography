@@ -8,6 +8,6 @@ class vlCryptography(object):
         if len(x) == 0: raise ValueError("Empty source.")
         key,x,M,N = bytearray(self._key),bytearray(x),len(self._key),len(x)
         for J in range(M,N):
-            key = [(key[m-2] + key[m-2] + key[m-1]) % 256 for m in range(J)]
+            key = [(key[m-2] + key[m-1] + key[m]) % 256 for m in range(J)]
             key.append(sum(key) % 256)
         return bytes([key[n]^x[n] for n in range(N)])
